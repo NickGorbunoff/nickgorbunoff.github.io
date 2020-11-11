@@ -11,17 +11,10 @@ a:active {
 }
 
 .info {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	    -ms-flex-direction: column;
-	        -webkit-box-orient: vertical;
-	        -webkit-box-direction: normal;
-	            flex-direction: column;
-	padding-top: 2rem;
+	align-items: center;
+	flex-direction: column;
+	padding: 2rem 0;
 }
 
 .logo {
@@ -51,7 +44,6 @@ a:active {
 }
 
 .btn-outline {
-	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
 
@@ -74,36 +66,26 @@ a:active {
 
 .list-inline {
 	list-style-type: none;
-		display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	    -ms-flex-pack: center;
-	        -webkit-box-pack: center;
-	            justify-content: center;
-	    -ms-flex-direction: row;
-	        -webkit-box-orient: horizontal;
-	        -webkit-box-direction: normal;
-	            flex-direction: row;
+	justify-content: center;
+	flex-direction: row;
 	padding: 0;
-	-ms-flex-wrap: wrap;
-	-o-flex-wrap: wrap;
+	margin: 0;
 	flex-wrap: wrap;
 }
 
 .btn-social {
 	color: #233140;
-	display: inline-block;
-	width: 48px;
-	height: 48px;
-	padding: 0;
+	padding: 0.8rem 1rem;
 	border: 2px solid #2c3e50;
-	border-radius: 100%;
-	text-align: center;
-	font-size: 1.5rem;
-	line-height: 3rem;
-	margin: 0.7rem ;
+	border-radius: 30px;
+	font-size: 1.25rem;
+	margin: 0.7rem;
 	text-decoration: none;
+	font-family: Helvetica, Arial, sans-serif;
+	display: block;
 }
+
 
 @media (prefers-color-scheme: dark) {
 	body {
@@ -122,5 +104,10 @@ a:active {
 	.btn-social {
 		color: #4bd0a7;
 		border-color: #4bd0a7;
+	}
+	.btn-outline:hover,
+	.btn-outline:focus,
+	.btn-outline:active {
+		color: #ffffff;
 	}
 }
